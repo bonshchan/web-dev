@@ -12,13 +12,6 @@ body{
   background-attachment: fixed;
 }
 
-#main1 {
-  width: 1350;
-  height: 70;
-  border: 1px solid black; 
-  display: flex;
-  align-items: justify;
-} 
 #main2 {
   width: 1350;
   height: 110;
@@ -26,6 +19,18 @@ body{
   display: flex;
   align-items: justify;
 } 
+	
+
+@media screen and (min-width: 1250px) {
+#main2 {
+  width: 1350;
+  height: 110;
+  border: 0px solid black; 
+  display: flex;
+  align-items: justify;
+ } 
+}
+	  
 
 .body1 {
 	background-color: #228B22;
@@ -44,9 +49,18 @@ body{
 	margin: 5;
 }
 
+@media screen and (min-width: 768px) {
+	#r1{
+	text-align: left;
+	margin: 5;
+}
+	}	
+
 #r2{
 	text-align: center;
 }
+
+
 
 
  * {box-sizing: border-box;}
