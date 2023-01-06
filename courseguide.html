@@ -20,6 +20,10 @@ body{
   align-items: justify;
 } 
 
+#main2 {
+  height: 10vh;
+}
+
 .body1 {
 	background-color: #228B22;
 }
@@ -76,6 +80,18 @@ body{
 .wrapper:hover {
   opacity: 1.0;
 }
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 90vw;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 
 h1{
   text-align: center;
