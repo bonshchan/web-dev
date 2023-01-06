@@ -1,6 +1,6 @@
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 <title> CS 301-Applications Development Web Page </title>
 <style>
@@ -12,13 +12,7 @@ body{
   background-size: cover;
 }
 
-#main1 {
-  width: 1350;
-  height: 70;
-  border: 1px solid black; 
-  display: flex;
-  align-items: justify;
-} 
+
 #main2 {
   width: 1350;
   height: 110;
@@ -27,39 +21,27 @@ body{
   align-items: justify;
 } 
 
+#main2 {
+  width: 80vw;
+}
+
+
+
 .body1 {
 	background-color: #228B22;
 }
 
 .img1 {
-	margin: 1;
+	margin: 1vw;
 	float: left;
 	display: flex;
 }
-
-.img2 {
-  display: flex;
-  margin-left: 440px;
-  margin-right: auto;
-  display: inline-block;
-
+@media (max-width: 600px) {
+  .img1 {
+    float: none;
+  }
 }
 
-.img3 {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-
-}
-
-.img4 {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-
- }
 
 #r1{
 	text-align: left;
@@ -81,7 +63,19 @@ body{
 .wrapper:hover {
   opacity: 1.0;
 }
+	
+.wrapper {
+  width: 80vw;
+}
 
+@media (max-width: 600px) {
+  .wrapper {
+    width: 90vw;
+  }
+}
+
+	
+	
 h1{
   text-align: center;
 }
