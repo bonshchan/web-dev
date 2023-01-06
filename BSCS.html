@@ -11,6 +11,21 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("mobile-bscs2.jpg");
+    background-size: cover;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+  body {
+    background-image: url("bscs2.jpg");
+    background-size: 100% auto;
+  }
+}
 
 
 #main2 {
@@ -21,8 +36,20 @@ body{
   align-items: justify;
 } 
 
-#main2 {
-  width: 80vw;
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  #main2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+  #main2 {
+    width: 1350px;
+    height: 110px;
+  }
 }
 
 
@@ -30,22 +57,63 @@ body{
 .body1 {
 	background-color: #228B22;
 }
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  .body1 {
+    background-color: #006400;
+  }
+}
 
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+  .body1 {
+    background-color: #228B22;
+  }
+}
+
+	
 .img1 {
 	margin: 1vw;
 	float: left;
 	display: flex;
 }
-@media (max-width: 600px) {
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
   .img1 {
+    margin: 5%;
     float: none;
   }
 }
+
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+  .img1 {
+    margin: 1vw;
+    float: left;
+  }
+}
+
 
 
 #r1{
 	text-align: left;
 	margin: 5;
+}
+
+	/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  #r1 {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+  #r1 {
+    text-align: left;
+    margin: 5px;
+  }
 }
 
 
@@ -64,13 +132,19 @@ body{
   opacity: 1.0;
 }
 	
-.wrapper {
-  width: 80vw;
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    padding: 1rem 0;
+  }
 }
 
-@media (max-width: 600px) {
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
   .wrapper {
-    width: 90vw;
+    width: 500px;
+    padding: 2rem 0 1rem 0;
   }
 }
 
@@ -80,6 +154,19 @@ h1{
   text-align: center;
 }
 
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  h1 {
+    text-align: left;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+  h1 {
+    text-align: center;
+  }
+}
 
 </style>
 </head>
