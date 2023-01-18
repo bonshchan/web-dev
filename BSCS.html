@@ -36,19 +36,23 @@ body{
   align-items: justify;
 } 
 
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-  #main2 {
-    width: 100%;
-    height: auto;
-  }
+@media screen and (min-width: 1250px) {
+#main2 {
+  width: 1350;
+  height: 110;
+  border: 0px solid black; 
+  display: flex;
+  align-items: justify;
+ } 
 }
 
-/* Desktop styles */
-@media only screen and (min-width: 601px) {
+@media screen and (max-width: 768px) {
   #main2 {
-    width: 1350px;
-    height: 110px;
+    width: 100%; 
+    height: auto; 
+    border: 0; 
+    flex-wrap: wrap; 
+    align-items: center; 
   }
 }
 
