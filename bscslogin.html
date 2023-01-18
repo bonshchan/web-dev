@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.00">  
   <title>BSCS Login </title>
  <style>
  
@@ -16,6 +16,15 @@ body{
   background-image: url("bscs1.jpg");
   background-size: 100% 100%;
 }
+	 
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("mobile-bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}	 
+	 
 .wrapper{
   width: 330px;
   padding: 2rem 0 1rem 0;
@@ -25,6 +34,14 @@ body{
   text-align: center;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 95%; 
+    margin: 2rem auto; 
+  }
+}
+	 
 h1{
   font-size: 2rem;
   color: #07001f;
