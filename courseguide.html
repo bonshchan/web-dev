@@ -20,15 +20,32 @@ body {
 
 
 #main2 {
-  width: 100%;
+  width: 1350;
   height: 110;
   border: 0px solid black; 
   display: flex;
   align-items: justify;
 } 
+	
 
+@media screen and (min-width: 1250px) {
 #main2 {
-  height: 10vh;
+  width: 1350;
+  height: 110;
+  border: 0px solid black; 
+  display: flex;
+  align-items: justify;
+ } 
+}
+
+@media screen and (max-width: 768px) {
+  #main2 {
+    width: 100%; 
+    height: auto; 
+    border: 0; 
+    flex-wrap: wrap; 
+    align-items: center; 
+  }
 }
 
 .body1 {
@@ -46,9 +63,7 @@ body {
 	float: left;
 	display: flex;
 }
-.img1 {
-  margin: 1vw;
-}
+
 	
 @media (max-width: 600px) {
   .img1 {
@@ -65,7 +80,7 @@ body {
 }
 
 .img2 {
-  margin: 1vw;
+  margin: 1;
 }
 
 @media (max-width: 600px) {
