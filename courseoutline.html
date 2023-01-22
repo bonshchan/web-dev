@@ -5,10 +5,17 @@
 <style>
 body{
   background-image: url("bscs2.jpg");
-  height: 100%;
-  background-position: center;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+ 
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("mobile-bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 #main1 {
@@ -25,6 +32,27 @@ body{
   display: flex;
   align-items: justify;
 } 
+	
+
+@media screen and (min-width: 1250px) {
+#main2 {
+  width: 1350;
+  height: 110;
+  border: 0px solid black; 
+  display: flex;
+  align-items: justify;
+ } 
+}
+
+@media screen and (max-width: 768px) {
+  #main2 {
+    width: 100%; 
+    height: auto; 
+    border: 0; 
+    flex-wrap: wrap; 
+    align-items: center; 
+  }
+}
 
 .body1 {
 	background-color: #228B22;
@@ -109,7 +137,7 @@ width= "100">
 	face = "Times New Roman"
 	color= "white">
 Republic of the Philippines </font>
-
+<hr size= 1 width= 500 color= "white" >
 
 <font size="5" 
 	face = "Arial"
