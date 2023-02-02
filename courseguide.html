@@ -156,26 +156,19 @@ body{
 }
 
 	
-
-@media screen and (min-width: 1250px) {
-.wrapper {
-  border: 0px solid black; 
-  display: flex;
-  align-items: justify;
- } 
-}
-
-@media screen and (max-width: 768px) {
-.wrapper {
-    width: 1400px; 
-    height: auto; 
-    border: 0; 
-    flex-wrap: wrap; 
-    align-items: center; 
+@media (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+    padding: 1rem;
   }
 }
 
-
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+	
 .wrapper:hover {
   opacity: 1.0;
 }
