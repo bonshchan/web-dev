@@ -155,12 +155,25 @@ body{
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 780px) {
-  .wrapper {
-    width: 90%;
-  }
+	
+
+@media screen and (min-width: 1250px) {
+.wrapper {
+  border: 0px solid black; 
+  display: flex;
+  align-items: justify;
+ } 
 }
 
+@media screen and (max-width: 768px) {
+.wrapper {
+    width: 1400px; 
+    height: auto; 
+    border: 0; 
+    flex-wrap: wrap; 
+    align-items: center; 
+  }
+}
 
 
 .wrapper:hover {
